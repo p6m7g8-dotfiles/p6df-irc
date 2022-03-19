@@ -8,7 +8,7 @@
 ######################################################################
 p6df::modules::irc::deps() {
   ModuleDeps=(
-    p6m7g8/p6df-shell
+    p6m7g8-dotfiles/p6df-shell
   )
 }
 
