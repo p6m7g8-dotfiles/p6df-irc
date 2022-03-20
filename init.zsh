@@ -33,7 +33,7 @@ p6df::modules::irc::external::brew() {
 ######################################################################
 p6df::modules::irc::home::symlink() {
 
-  ln -fs $P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-irc/share/irssi .irssi
+  p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-irc/share/irssi" ".irssi"
 }
 
 ######################################################################
