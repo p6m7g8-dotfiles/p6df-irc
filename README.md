@@ -10,8 +10,7 @@
   - [Summary](#summary)
   - [Contributing](#contributing)
   - [Code of Conduct](#code-of-conduct)
-  - [Changes](#changes)
-    - [Usage](#usage)
+  - [Usage](#usage)
   - [Author](#author)
 
 ### Badges
@@ -34,26 +33,49 @@
 
 - [Code of Conduct](https://github.com/p6m7g8/.github/blob/master/CODE_OF_CONDUCT.md)
 
-## Changes
-
-- [Change Log](CHANGELOG.md)
-
 ## Usage
+
+
+### Aliases
+
+- p6_irc -> p6df::modules::irc::cmd
+- p6_irc_attach -> p6df::modules::irc::attach
+- p6_irc_init -> p6df::modules::irc::init
+
+### Functions
 
 ### p6df-irc:
 
 #### p6df-irc/init.zsh:
 
-- p6df::modules::irc()
-- p6df::modules::irc::aliases::init()
-- p6df::modules::irc::attach()
+- p6df::modules::irc::aliases::init(_module, dir)
 - p6df::modules::irc::deps()
 - p6df::modules::irc::external::brew()
 - p6df::modules::irc::home::symlink()
+
+
+### p6df-irc/lib:
+
+#### p6df-irc/lib/cmd.sh:
+
+- p6df::modules::irc::cmd()
+
+#### p6df-irc/lib/irc.sh:
+
+- p6df::modules::irc::attach()
+- p6df::modules::irc::cmd()
 - p6df::modules::irc::start()
 
 
 
+## Hier
+```text
+.
+├── cmd.sh
+└── irc.sh
+
+1 directory, 2 files
+```
 ## Author
 
 Philip M . Gollucci <pgollucci@p6m7g8.com>

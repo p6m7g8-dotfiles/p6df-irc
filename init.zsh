@@ -21,7 +21,7 @@ p6df::modules::irc::deps() {
 ######################################################################
 p6df::modules::irc::external::brew() {
 
-  brew install irssi
+  p6df::modules::homebrew::cli::brew::install irssi
 
   p6_return_void
 }
@@ -44,57 +44,23 @@ p6df::modules::irc::home::symlink() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::irc::aliases::init()
+# Function: p6df::modules::irc::aliases::init(_module, dir)
+#
+#  Args:
+#	_module -
+#	dir -
 #
 #>
 ######################################################################
 p6df::modules::irc::aliases::init() {
+  local _module="$1"
+  local dir="$2"
 
-  alias p6_irc='p6df::modules::irc'
-  alias p6_irc_attach='p6df::modules::irc::attach'
-  alias p6_irc_init='p6df::modules::irc::init'
+  p6_bootstrap "$dir"
 
-  p6_return_void
-}
-
-######################################################################
-#<
-#
-# Function: p6df::modules::irc::attach()
-#
-#>
-######################################################################
-p6df::modules::irc::attach() {
-
-  p6df::modules::shell::tmux::attach "irc"
-
-  p6_return_void
-}
-
-######################################################################
-#<
-#
-# Function: p6df::modules::irc::start()
-#
-#>
-######################################################################
-p6df::modules::irc::start() {
-  
-  p6df::modules::shell::tmux::new "irc" "irssi"
-
-  p6_return_void
-}
-
-######################################################################
-#<
-#
-# Function: p6df::modules::irc()
-#
-#>
-######################################################################
-p6df::modules::irc() {
-
-  p6df::modules::shell::tmux::make "irc" "irssi"
+  p6_alias "p6_irc" "p6df::modules::irc::cmd"
+  p6_alias "p6_irc_attach" "p6df::modules::irc::attach"
+  p6_alias "p6_irc_init" "p6df::modules::irc::init"
 
   p6_return_void
 }
