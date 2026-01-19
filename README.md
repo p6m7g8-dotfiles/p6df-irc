@@ -23,6 +23,7 @@
 - p6_irc IS p6df::modules::irc::cmd
 - p6_irc_attach IS p6df::modules::irc::attach
 - p6_irc_init IS p6df::modules::irc::init
+
 ### Functions
 
 ## p6df-irc
