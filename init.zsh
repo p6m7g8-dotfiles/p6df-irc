@@ -56,8 +56,6 @@ p6df::modules::irc::aliases::init() {
   local _module="$1"
   local dir="$2"
 
-  p6_bootstrap "$dir"
-
   p6_alias "p6_irc" "p6df::modules::irc::cmd"
   p6_alias "p6_irc_attach" "p6df::modules::irc::attach"
   p6_alias "p6_irc_init" "p6df::modules::irc::init"
