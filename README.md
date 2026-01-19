@@ -2,50 +2,62 @@
 
 ## Table of Contents
 
+- [Badges](#badges)
+- [Summary](#summary)
+- [Contributing](#contributing)
+- [Code of Conduct](#code-of-conduct)
+- [Usage](#usage)
+  - [Aliases](#aliases)
+  - [Functions](#functions)
+- [Hierarchy](#hierarchy)
+- [Author](#author)
+
 ## Badges
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Summary
 
+TODO: Add a short summary of this module.
+
 ## Contributing
 
-- [How to Contribute](<https://github.com//.github/blob/main/CONTRIBUTING.md>)
+- [How to Contribute](<https://github.com/p6m7g8-dotfiles/.github/blob/main/CONTRIBUTING.md>)
 
 ## Code of Conduct
 
-- [Code of Conduct](<https://github.com//.github/blob/main/CODE_OF_CONDUCT.md>)
+- [Code of Conduct](<https://github.com/p6m7g8-dotfiles/.github/blob/main/CODE_OF_CONDUCT.md>)
 
 ## Usage
 
 ### Aliases
 
-- p6_irc IS p6df::modules::irc::cmd
-- p6_irc_attach IS p6df::modules::irc::attach
-- p6_irc_init IS p6df::modules::irc::init
+- `p6_irc` -> `p6df::modules::irc::cmd`
+- `p6_irc_attach` -> `p6df::modules::irc::attach`
+- `p6_irc_init` -> `p6df::modules::irc::init`
 
 ### Functions
 
-## p6df-irc
+#### p6df-irc
 
-### p6df-irc/init.zsh
+##### p6df-irc/init.zsh
 
-- p6df::modules::irc::aliases::init(_module, dir)
-- p6df::modules::irc::deps()
-- p6df::modules::irc::external::brew()
-- p6df::modules::irc::home::symlink()
+- `p6df::modules::irc::aliases::init(_module, dir)`
+- `p6df::modules::irc::deps()`
+- `p6df::modules::irc::external::brew()`
+- `p6df::modules::irc::home::symlink()`
 
-## p6df-irc/lib
+#### p6df-irc/lib
 
-### p6df-irc/lib/cmd.sh
+##### p6df-irc/lib/cmd.sh
 
-- p6df::modules::irc::cmd()
+- `p6df::modules::irc::cmd()`
 
-### p6df-irc/lib/irc.sh
+##### p6df-irc/lib/irc.sh
 
-- p6df::modules::irc::attach()
-- p6df::modules::irc::cmd()
-- p6df::modules::irc::start()
+- `p6df::modules::irc::attach()`
+- `p6df::modules::irc::cmd()`
+- `p6df::modules::irc::start()`
 
 ## Hierarchy
 
@@ -88,4 +100,4 @@
 
 ## Author
 
-Philip M . Gollucci <pgollucci@p6m7g8.com>
+Philip M. Gollucci <pgollucci@p6m7g8.com>
