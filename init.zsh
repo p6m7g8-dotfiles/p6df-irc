@@ -21,7 +21,7 @@ p6df::modules::irc::deps() {
 ######################################################################
 p6df::modules::irc::external::brew() {
 
-  p6df::modules::homebrew::cli::brew::install irssi
+  p6df::core::homebrew::cli::brew::install irssi
 
   p6_return_void
 }
