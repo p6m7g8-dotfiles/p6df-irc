@@ -44,8 +44,8 @@ TODO: Add a short summary of this module.
 
 - `p6df::modules::irc::aliases::init(_module, dir)`
   - Args:
-    - _module - 
-    - dir - 
+    - _module -
+    - dir -
 - `p6df::modules::irc::deps()`
 - `p6df::modules::irc::external::brew()`
 - `p6df::modules::irc::home::symlink()`
