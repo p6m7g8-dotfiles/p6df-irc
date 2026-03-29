@@ -29,12 +29,12 @@ p6df::modules::irc::external::brews() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::irc::home::symlink()
+# Function: p6df::modules::irc::home::symlinks()
 #
 #  Environment:	 P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
 #>
 ######################################################################
-p6df::modules::irc::home::symlink() {
+p6df::modules::irc::home::symlinks() {
 
   p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-irc/share/irssi" ".irssi"
 
