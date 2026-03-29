@@ -15,11 +15,11 @@ p6df::modules::irc::deps() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::irc::external::brew()
+# Function: p6df::modules::irc::external::brews()
 #
 #>
 ######################################################################
-p6df::modules::irc::external::brew() {
+p6df::modules::irc::external::brews() {
 
   p6df::core::homebrew::cli::brew::install irssi
 
