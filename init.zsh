@@ -62,3 +62,19 @@ p6df::modules::irc::aliases::init() {
 
   p6_return_void
 }
+
+######################################################################
+#<
+#
+# Function: words irc $IRC_SERVER = p6df::modules::irc::profile::mod()
+#
+#  Returns:
+#	words - irc $IRC_SERVER
+#
+#  Environment:	 IRC_SERVER
+#>
+######################################################################
+p6df::modules::irc::profile::mod() {
+
+  p6_return_words 'irc' '$IRC_SERVER'
+}
