@@ -76,5 +76,5 @@ p6df::modules::irc::aliases::init() {
 ######################################################################
 p6df::modules::irc::profile::mod() {
 
-  p6_return_words 'irc' "$"
+  p6_return_words 'irc' '$IRCNICK' '$IRCHOST'
 }
