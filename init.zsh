@@ -15,13 +15,21 @@ p6df::modules::irc::deps() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::irc::external::brews()
+# Function: p6df::modules::irc::aliases::init(_module, dir)
+#
+#  Args:
+#	_module -
+#	dir -
 #
 #>
 ######################################################################
-p6df::modules::irc::external::brews() {
+p6df::modules::irc::aliases::init() {
+  local _module="$1"
+  local dir="$2"
 
-  p6df::core::homebrew::cli::brew::install irssi
+  p6_alias "p6_irc" "p6df::modules::irc::cmd"
+  p6_alias "p6_irc_attach" "p6df::modules::irc::attach"
+  p6_alias "p6_irc_init" "p6df::modules::irc::init"
 
   p6_return_void
 }
@@ -44,21 +52,13 @@ p6df::modules::irc::home::symlinks() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::irc::aliases::init(_module, dir)
-#
-#  Args:
-#	_module -
-#	dir -
+# Function: p6df::modules::irc::external::brews()
 #
 #>
 ######################################################################
-p6df::modules::irc::aliases::init() {
-  local _module="$1"
-  local dir="$2"
+p6df::modules::irc::external::brews() {
 
-  p6_alias "p6_irc" "p6df::modules::irc::cmd"
-  p6_alias "p6_irc_attach" "p6df::modules::irc::attach"
-  p6_alias "p6_irc_init" "p6df::modules::irc::init"
+  p6df::core::homebrew::cli::brew::install irssi
 
   p6_return_void
 }
