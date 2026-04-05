@@ -66,12 +66,12 @@ p6df::modules::irc::external::brews() {
 ######################################################################
 #<
 #
-# Function: words irc $IRC_SERVER = p6df::modules::irc::profile::mod()
+# Function: words irc = p6df::modules::irc::profile::mod()
 #
 #  Returns:
-#	words - irc $IRC_SERVER
+#	words - irc
 #
-#  Environment:	 IRC_SERVER
+#  Environment:	 IRCHOST IRCNICK
 #>
 ######################################################################
 p6df::modules::irc::profile::mod() {
